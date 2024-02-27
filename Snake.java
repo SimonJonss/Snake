@@ -98,7 +98,6 @@ public class Snake extends Thread{
         }
 
         for (int h = 2; h < bodyPartPos.length; h++) {
-            // System.out.println(bodyPartPos[h][0] + " | " + headPos[0]);
             if ( bodyPartPos[h][0] == headPos[0] && bodyPartPos[h][1] == headPos[1] ) {
                 dead = true;
             }
@@ -148,9 +147,7 @@ public class Snake extends Thread{
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                
-                // System.out.println("Något");
-                // testRunner++;
+
             } else {
                 try {
                     Thread.sleep(50);
